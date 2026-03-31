@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOApp | VA Income Underwriter</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>VA Income Calculator Workbench</h1>
+      <p class="subtitle">Drop borrower docs, identify each file, and generate senior-underwriter style income math for BytePro LOS.</p>
+
+      <section id="dropzone" class="dropzone">
+        <input id="fileInput" type="file" multiple accept=".pdf,image/*" hidden />
+        <p><strong>Drag & drop</strong> PDF/image files here</p>
+        <button id="browseBtn" type="button">Choose Files</button>
+      </section>
+
+      <section>
+        <h2>Queued Documents</h2>
+        <ul id="fileList" class="file-list"></ul>
+        <button id="analyzeBtn" type="button" disabled>Analyze Income</button>
+      </section>
+
+      <section id="results" class="results hidden">
+        <h2>Document Review</h2>
+        <div id="documentCards"></div>
+
+        <h2>Income Calculation (Show Work)</h2>
+        <div id="worksheet" class="worksheet"></div>
+      </section>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>

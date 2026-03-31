@@ -1,0 +1,85 @@
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #1d2430;
+  background: #f5f7fb;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.subtitle {
+  color: #4b5563;
+}
+
+.dropzone {
+  background: white;
+  border: 2px dashed #93a2b8;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  margin: 1rem 0 1.5rem;
+}
+
+.dropzone.dragover {
+  border-color: #0b6cf2;
+  background: #eaf3ff;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: #0b6cf2;
+  color: #fff;
+  padding: 0.65rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+}
+
+.file-list li {
+  background: #fff;
+  padding: 0.7rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+}
+
+.results {
+  margin-top: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.card,
+.worksheet {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+code {
+  display: block;
+  white-space: pre-wrap;
+  background: #0f172a;
+  color: #eef2ff;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
