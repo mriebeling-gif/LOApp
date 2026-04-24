@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tank vs UFOs</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <h1>Tank vs UFOs</h1>
+      <p>Move: WASD / Arrow Keys | Aim turret: Mouse | Shoot: Space / Left Click</p>
+      <p><span id="score">Score: 0</span> <span id="lives">Lives: 5</span></p>
+    </div>
+    <div id="game-over" class="hidden">
+      <h2>Game Over</h2>
+      <p id="final-score"></p>
+      <button id="restart">Restart</button>
+    </div>
+
+    <script type="module" src="game.js"></script>
+  </body>
+</html>
