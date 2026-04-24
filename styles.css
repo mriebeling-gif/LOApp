@@ -1,0 +1,79 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #020617;
+}
+
+canvas {
+  display: block;
+}
+
+#hud {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  z-index: 10;
+  color: #e2e8f0;
+  background: rgba(2, 6, 23, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 10px;
+  padding: 10px 14px;
+  backdrop-filter: blur(4px);
+}
+
+#hud h1 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+#hud p {
+  margin: 4px 0;
+  font-size: 0.88rem;
+}
+
+#score,
+#lives {
+  margin-right: 16px;
+  font-weight: 600;
+}
+
+#game-over {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 10px;
+  text-align: center;
+  color: #f8fafc;
+  background: rgba(2, 6, 23, 0.82);
+  z-index: 20;
+}
+
+#game-over h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#game-over button {
+  border: 0;
+  border-radius: 8px;
+  background: #38bdf8;
+  color: #082f49;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none !important;
+}
