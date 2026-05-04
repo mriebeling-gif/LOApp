@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenTrace — Reverse Lookup</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>OpenTrace</h1>
+      <p class="subtitle">Reverse lookup for phone, name, email, and address using public/open data sources.</p>
+    </div>
+    <span class="badge">OSINT Workflow</span>
+  </header>
+
+  <main class="container">
+    <section class="card search-card">
+      <h2>Run Reverse Search</h2>
+      <div class="search-types" id="searchTypes"></div>
+
+      <form id="searchForm">
+        <label id="searchLabel" for="searchInput">Phone Number</label>
+        <input id="searchInput" name="query" type="text" placeholder="+1 415 555 0101" required />
+        <button type="submit">Search</button>
+      </form>
+      <p class="note">
+        For lawful use only. This tool helps investigate information already published by public sources.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Results</h2>
+      <div id="resultMeta" class="result-meta"></div>
+      <div id="results" class="results empty">Run a search to see source links and parsed findings.</div>
+    </section>
+
+    <section class="card">
+      <h2>Sources used by this app</h2>
+      <ul id="sourceList" class="source-list"></ul>
+    </section>
+  </main>
+
+  <template id="resultTemplate">
+    <article class="result-item">
+      <div class="result-head">
+        <h3></h3>
+        <a target="_blank" rel="noopener noreferrer">Open source</a>
+      </div>
+      <p class="result-summary"></p>
+      <pre class="result-raw"></pre>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
